@@ -1,0 +1,14 @@
+sources:
+    include:
+        - ../../SourceryExample/Models
+    exclude:
+        - ../../SourceryExampleTests
+
+templates:
+    - ../Templates/ModelsMock/ModelsMock.swifttemplate
+
+output:
+    ../../SourceryExampleTests
+
+args:
+    projectName: ${PROJECT_NAME}
