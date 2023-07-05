@@ -16,21 +16,16 @@ private let models: [Struct] = {
     }
 }()
 
+
 private func generateMock() -> String {
     let stringMocks = models.map {
         var varNames = [String]()
-        
+
         let paramsLines = $0.rawVariables.map {
-            
+
             varNames.append($0.name)
-            
-            var typeName = $0.typeName.name
-            if let type = $0.type,
-               type.isKind(of: Enum.self) {
-                typeName = $0.typeName.actualTypeName?.name ?? typeName
-            }
-            
-            return "\($0.name): \(typeName) = \(mockParam(variable: $0))"
+
+            return "\($0.name): \($0.typeName.name) = \(mockParam(variable: $0))"
         }
 
         return """
@@ -48,7 +43,7 @@ extension \($0.name) {
 }
 """
     }
-    
+
     return stringMocks.joined(separator: "\n\n")
 }
 
@@ -70,3 +65,4 @@ import Foundation
 \(generateMock())
 """
 }
+

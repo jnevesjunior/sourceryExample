@@ -1,8 +1,6 @@
 // Generated using Sourcery 2.0.2 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
-// swiftlint:disable all
-
 //
 //  SourceryExampleModels+mock.swift
 //  SourceryExampleTests
@@ -22,8 +20,8 @@ extension Address {
         street: String = "",
         city: String = "",
         state: String = "",
-        homeNumber: Int = .random(in: 0..<100),
-        postalCode: String = "00000-000"
+        homeNumber: Int = 0,
+        postalCode: String = ""
     ) -> Address {
         .init(
             street: street,
@@ -44,7 +42,7 @@ extension Client {
         name: String = "",
         age: Int = 0,
         isFistAccess: Bool = false,
-        address: Address = .mock()
+        address: Address = 
     ) -> Client {
         .init(
             id: id,

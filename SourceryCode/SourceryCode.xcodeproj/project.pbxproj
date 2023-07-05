@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6BA8C95D2A2B5A0A00182CBC /* Soucery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA8C95C2A2B5A0A00182CBC /* Soucery.swift */; };
+		6B9362962A54E29D00DB8479 /* SourceryRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 6B9362952A54E29D00DB8479 /* SourceryRuntime */; };
+		6B9362982A54E29D00DB8479 /* SourcerySwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6B9362972A54E29D00DB8479 /* SourcerySwift */; };
+		6B9362A22A54E3BB00DB8479 /* ModelsMock.meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B93629F2A54E3BB00DB8479 /* ModelsMock.meta.swift */; };
+		6B9362A92A54EDF300DB8479 /* Core.meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9362A72A54EDF300DB8479 /* Core.meta.swift */; };
+		6B9362AD2A54F48600DB8479 /* RuntimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9362AC2A54F48600DB8479 /* RuntimeHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6BA8C9572A2B5A0A00182CBC /* CopyFiles */ = {
+		6B9362882A54E1F700DB8479 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -23,81 +27,118 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6BA8C9592A2B5A0A00182CBC /* libSoucery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSoucery.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BA8C95C2A2B5A0A00182CBC /* Soucery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soucery.swift; sourceTree = "<group>"; };
+		6B93628A2A54E1F700DB8479 /* libSourceryCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSourceryCode.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B93629F2A54E3BB00DB8479 /* ModelsMock.meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelsMock.meta.swift; sourceTree = "<group>"; };
+		6B9362A02A54E3BB00DB8479 /* ModelsMock.swifttemplate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ModelsMock.swifttemplate; sourceTree = "<group>"; };
+		6B9362A72A54EDF300DB8479 /* Core.meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.meta.swift; sourceTree = "<group>"; };
+		6B9362AC2A54F48600DB8479 /* RuntimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6BA8C9562A2B5A0A00182CBC /* Frameworks */ = {
+		6B9362872A54E1F700DB8479 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B9362982A54E29D00DB8479 /* SourcerySwift in Frameworks */,
+				6B9362962A54E29D00DB8479 /* SourceryRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6BA8C9502A2B5A0A00182CBC = {
+		6B9362812A54E1F700DB8479 = {
 			isa = PBXGroup;
 			children = (
-				6BA8C95B2A2B5A0A00182CBC /* Soucery */,
-				6BA8C95A2A2B5A0A00182CBC /* Products */,
+				6B9362AB2A54F46A00DB8479 /* Helpers */,
+				6B93628C2A54E1F700DB8479 /* Templates */,
+				6B93628B2A54E1F700DB8479 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6BA8C95A2A2B5A0A00182CBC /* Products */ = {
+		6B93628B2A54E1F700DB8479 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6BA8C9592A2B5A0A00182CBC /* libSoucery.a */,
+				6B93628A2A54E1F700DB8479 /* libSourceryCode.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6BA8C95B2A2B5A0A00182CBC /* Soucery */ = {
+		6B93628C2A54E1F700DB8479 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				6BA8C95C2A2B5A0A00182CBC /* Soucery.swift */,
+				6B9362A52A54EDF300DB8479 /* Core */,
+				6B93629E2A54E3BB00DB8479 /* ModelsMock */,
 			);
-			path = Soucery;
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		6B93629E2A54E3BB00DB8479 /* ModelsMock */ = {
+			isa = PBXGroup;
+			children = (
+				6B93629F2A54E3BB00DB8479 /* ModelsMock.meta.swift */,
+				6B9362A02A54E3BB00DB8479 /* ModelsMock.swifttemplate */,
+			);
+			path = ModelsMock;
+			sourceTree = "<group>";
+		};
+		6B9362A52A54EDF300DB8479 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6B9362A72A54EDF300DB8479 /* Core.meta.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6B9362AB2A54F46A00DB8479 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6B9362AC2A54F48600DB8479 /* RuntimeHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6BA8C9582A2B5A0A00182CBC /* Soucery */ = {
+		6B9362892A54E1F700DB8479 /* SourceryCode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BA8C9602A2B5A0A00182CBC /* Build configuration list for PBXNativeTarget "Soucery" */;
+			buildConfigurationList = 6B9362912A54E1F700DB8479 /* Build configuration list for PBXNativeTarget "SourceryCode" */;
 			buildPhases = (
-				6BA8C9552A2B5A0A00182CBC /* Sources */,
-				6BA8C9562A2B5A0A00182CBC /* Frameworks */,
-				6BA8C9572A2B5A0A00182CBC /* CopyFiles */,
+				6B9362862A54E1F700DB8479 /* Sources */,
+				6B9362872A54E1F700DB8479 /* Frameworks */,
+				6B9362882A54E1F700DB8479 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Soucery;
-			productName = Soucery;
-			productReference = 6BA8C9592A2B5A0A00182CBC /* libSoucery.a */;
+			name = SourceryCode;
+			packageProductDependencies = (
+				6B9362952A54E29D00DB8479 /* SourceryRuntime */,
+				6B9362972A54E29D00DB8479 /* SourcerySwift */,
+			);
+			productName = SourceryCode;
+			productReference = 6B93628A2A54E1F700DB8479 /* libSourceryCode.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6BA8C9512A2B5A0A00182CBC /* Project object */ = {
+		6B9362822A54E1F700DB8479 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					6BA8C9582A2B5A0A00182CBC = {
+					6B9362892A54E1F700DB8479 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
-			buildConfigurationList = 6BA8C9542A2B5A0A00182CBC /* Build configuration list for PBXProject "Soucery" */;
+			buildConfigurationList = 6B9362852A54E1F700DB8479 /* Build configuration list for PBXProject "SourceryCode" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -105,29 +146,34 @@
 				en,
 				Base,
 			);
-			mainGroup = 6BA8C9502A2B5A0A00182CBC;
-			productRefGroup = 6BA8C95A2A2B5A0A00182CBC /* Products */;
+			mainGroup = 6B9362812A54E1F700DB8479;
+			packageReferences = (
+				6B9362942A54E29D00DB8479 /* XCRemoteSwiftPackageReference "Sourcery" */,
+			);
+			productRefGroup = 6B93628B2A54E1F700DB8479 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6BA8C9582A2B5A0A00182CBC /* Soucery */,
+				6B9362892A54E1F700DB8479 /* SourceryCode */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6BA8C9552A2B5A0A00182CBC /* Sources */ = {
+		6B9362862A54E1F700DB8479 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BA8C95D2A2B5A0A00182CBC /* Soucery.swift in Sources */,
+				6B9362A22A54E3BB00DB8479 /* ModelsMock.meta.swift in Sources */,
+				6B9362AD2A54F48600DB8479 /* RuntimeHelper.swift in Sources */,
+				6B9362A92A54EDF300DB8479 /* Core.meta.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		6BA8C95E2A2B5A0A00182CBC /* Debug */ = {
+		6B93628F2A54E1F700DB8479 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -187,7 +233,7 @@
 			};
 			name = Debug;
 		};
-		6BA8C95F2A2B5A0A00182CBC /* Release */ = {
+		6B9362902A54E1F700DB8479 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,24 +287,37 @@
 			};
 			name = Release;
 		};
-		6BA8C9612A2B5A0A00182CBC /* Debug */ = {
+		6B9362922A54E1F700DB8479 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UBWQ9S7Q94;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		6BA8C9622A2B5A0A00182CBC /* Release */ = {
+		6B9362932A54E1F700DB8479 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UBWQ9S7Q94;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -270,25 +329,49 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6BA8C9542A2B5A0A00182CBC /* Build configuration list for PBXProject "Soucery" */ = {
+		6B9362852A54E1F700DB8479 /* Build configuration list for PBXProject "SourceryCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6BA8C95E2A2B5A0A00182CBC /* Debug */,
-				6BA8C95F2A2B5A0A00182CBC /* Release */,
+				6B93628F2A54E1F700DB8479 /* Debug */,
+				6B9362902A54E1F700DB8479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BA8C9602A2B5A0A00182CBC /* Build configuration list for PBXNativeTarget "Soucery" */ = {
+		6B9362912A54E1F700DB8479 /* Build configuration list for PBXNativeTarget "SourceryCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6BA8C9612A2B5A0A00182CBC /* Debug */,
-				6BA8C9622A2B5A0A00182CBC /* Release */,
+				6B9362922A54E1F700DB8479 /* Debug */,
+				6B9362932A54E1F700DB8479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B9362942A54E29D00DB8479 /* XCRemoteSwiftPackageReference "Sourcery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Sourcery.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B9362952A54E29D00DB8479 /* SourceryRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B9362942A54E29D00DB8479 /* XCRemoteSwiftPackageReference "Sourcery" */;
+			productName = SourceryRuntime;
+		};
+		6B9362972A54E29D00DB8479 /* SourcerySwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B9362942A54E29D00DB8479 /* XCRemoteSwiftPackageReference "Sourcery" */;
+			productName = SourcerySwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 6BA8C9512A2B5A0A00182CBC /* Project object */;
+	rootObject = 6B9362822A54E1F700DB8479 /* Project object */;
 }

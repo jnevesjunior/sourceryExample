@@ -58,10 +58,6 @@
 		6BA8C94B2A2B578900182CBC /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		6BA8C96F2A2B5FA500182CBC /* SourceryExampleModels+mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SourceryExampleModels+mock.swift"; sourceTree = "<group>"; };
 		6BA8C9732A2B6D5900182CBC /* Sourcery.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = Sourcery.yml; sourceTree = "<group>"; };
-		6BA8C98B2A2B7A3A00182CBC /* ModelsMock.meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsMock.meta.swift; sourceTree = "<group>"; };
-		6BA8C98C2A2B7A3A00182CBC /* ModelsMock.swifttemplate */ = {isa = PBXFileReference; lastKnownFileType = text; path = ModelsMock.swifttemplate; sourceTree = "<group>"; };
-		6BA8C98E2A2B7A3A00182CBC /* MockParameter.meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockParameter.meta.swift; sourceTree = "<group>"; };
-		6BA8C98F2A2B7A3A00182CBC /* Core.meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.meta.swift; sourceTree = "<group>"; };
 		915AC1CB13C77EEECF3A34DE /* Pods_SourceryExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SourceryExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9769DAD47560C337393B12A9 /* Pods-SourceryExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceryExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-SourceryExampleTests/Pods-SourceryExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE5F4595E24A60C428C99733 /* Pods-SourceryExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceryExample.release.xcconfig"; path = "Target Support Files/Pods-SourceryExample/Pods-SourceryExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				6BA8C9722A2B6D5900182CBC /* Configuration */,
-				6BA8C9892A2B7A3A00182CBC /* Templates */,
 			);
 			path = Meta;
 			sourceTree = "<group>";
@@ -205,33 +200,6 @@
 				6BA8C9732A2B6D5900182CBC /* Sourcery.yml */,
 			);
 			path = Configuration;
-			sourceTree = "<group>";
-		};
-		6BA8C9892A2B7A3A00182CBC /* Templates */ = {
-			isa = PBXGroup;
-			children = (
-				6BA8C98A2A2B7A3A00182CBC /* ModelsMock */,
-				6BA8C98D2A2B7A3A00182CBC /* Core */,
-			);
-			path = Templates;
-			sourceTree = "<group>";
-		};
-		6BA8C98A2A2B7A3A00182CBC /* ModelsMock */ = {
-			isa = PBXGroup;
-			children = (
-				6BA8C98B2A2B7A3A00182CBC /* ModelsMock.meta.swift */,
-				6BA8C98C2A2B7A3A00182CBC /* ModelsMock.swifttemplate */,
-			);
-			path = ModelsMock;
-			sourceTree = "<group>";
-		};
-		6BA8C98D2A2B7A3A00182CBC /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				6BA8C98E2A2B7A3A00182CBC /* MockParameter.meta.swift */,
-				6BA8C98F2A2B7A3A00182CBC /* Core.meta.swift */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +356,7 @@
 		};
 		6BA8C96E2A2B5DD500182CBC /* Run Sourcery */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);

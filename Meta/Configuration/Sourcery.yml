@@ -5,10 +5,11 @@ sources:
         - ../../SourceryExampleTests
 
 templates:
-    - ../Templates/ModelsMock/ModelsMock.swifttemplate
+    - ../../SourceryCode/Templates/ModelsMock/ModelsMock.swifttemplate
 
 output:
     ../../SourceryExampleTests
 
 args:
     projectName: ${PROJECT_NAME}
+    hardCodedExample: Swift
